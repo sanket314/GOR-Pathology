@@ -2,48 +2,48 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-15T15:34:24 IST" name="Default suite" finished-at="2025-05-15T15:35:09 IST" duration-ms="45087">
+  <suite started-at="2025-05-15T17:29:40 IST" name="Default suite" finished-at="2025-05-15T17:30:24 IST" duration-ms="44369">
     <groups>
     </groups>
-    <test started-at="2025-05-15T15:34:24 IST" name="Default test" finished-at="2025-05-15T15:35:09 IST" duration-ms="45087">
+    <test started-at="2025-05-15T17:29:40 IST" name="Default test" finished-at="2025-05-15T17:30:24 IST" duration-ms="44369">
       <class name="testcases.DashboardTest">
-        <test-method is-config="true" signature="propLoad()[pri:0, instance:testcases.DashboardTest@63475ace]" started-at="2025-05-15T15:34:24 IST" name="propLoad" finished-at="2025-05-15T15:34:24 IST" duration-ms="14" status="PASS">
+        <test-method is-config="true" signature="propLoad()[pri:0, instance:testcases.DashboardTest@63475ace]" started-at="2025-05-15T17:29:40 IST" name="propLoad" finished-at="2025-05-15T17:29:40 IST" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- propLoad -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.DashboardTest@63475ace]" started-at="2025-05-15T15:34:24 IST" name="setup" finished-at="2025-05-15T15:34:29 IST" duration-ms="4486" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.DashboardTest@63475ace]" started-at="2025-05-15T17:29:40 IST" name="setup" finished-at="2025-05-15T17:29:45 IST" duration-ms="4534" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initPage()[pri:0, instance:testcases.DashboardTest@63475ace]" started-at="2025-05-15T15:34:29 IST" name="initPage" finished-at="2025-05-15T15:34:33 IST" duration-ms="4594" status="PASS">
+        <test-method is-config="true" signature="initPage()[pri:0, instance:testcases.DashboardTest@63475ace]" started-at="2025-05-15T17:29:45 IST" name="initPage" finished-at="2025-05-15T17:29:48 IST" duration-ms="3850" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPage -->
-        <test-method signature="TS09()[pri:1, instance:testcases.DashboardTest@63475ace]" started-at="2025-05-15T15:34:33 IST" name="TS09" finished-at="2025-05-15T15:34:38 IST" duration-ms="5138" status="PASS">
+        <test-method signature="TS09()[pri:1, instance:testcases.DashboardTest@63475ace]" started-at="2025-05-15T17:29:48 IST" name="TS09" finished-at="2025-05-15T17:29:53 IST" duration-ms="4939" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TS09 -->
-        <test-method signature="TS10()[pri:2, instance:testcases.DashboardTest@63475ace]" started-at="2025-05-15T15:34:38 IST" name="TS10" finished-at="2025-05-15T15:34:40 IST" duration-ms="1443" status="PASS">
+        <test-method signature="TS10()[pri:2, instance:testcases.DashboardTest@63475ace]" started-at="2025-05-15T17:29:53 IST" name="TS10" finished-at="2025-05-15T17:29:55 IST" duration-ms="1266" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TS10 -->
-        <test-method signature="TS11()[pri:3, instance:testcases.DashboardTest@63475ace]" started-at="2025-05-15T15:34:40 IST" name="TS11" finished-at="2025-05-15T15:34:43 IST" duration-ms="3130" status="PASS">
+        <test-method signature="TS11()[pri:3, instance:testcases.DashboardTest@63475ace]" started-at="2025-05-15T17:29:55 IST" name="TS11" finished-at="2025-05-15T17:29:58 IST" duration-ms="3095" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TS11 -->
-        <test-method signature="TS13()[pri:4, instance:testcases.DashboardTest@63475ace]" started-at="2025-05-15T15:34:43 IST" name="TS13" finished-at="2025-05-15T15:34:57 IST" duration-ms="14061" status="PASS">
+        <test-method signature="TS13()[pri:4, instance:testcases.DashboardTest@63475ace]" started-at="2025-05-15T17:29:58 IST" name="TS13" finished-at="2025-05-15T17:30:12 IST" duration-ms="14543" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TS13 -->
-        <test-method signature="TS14()[pri:5, instance:testcases.DashboardTest@63475ace]" started-at="2025-05-15T15:34:57 IST" name="TS14" finished-at="2025-05-15T15:35:03 IST" duration-ms="5518" status="PASS">
+        <test-method signature="TS14()[pri:5, instance:testcases.DashboardTest@63475ace]" started-at="2025-05-15T17:30:12 IST" name="TS14" finished-at="2025-05-15T17:30:18 IST" duration-ms="5314" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TS14 -->
-        <test-method signature="TS15()[pri:6, instance:testcases.DashboardTest@63475ace]" started-at="2025-05-15T15:35:03 IST" name="TS15" finished-at="2025-05-15T15:35:09 IST" duration-ms="6357" status="PASS">
+        <test-method signature="TS15()[pri:6, instance:testcases.DashboardTest@63475ace]" started-at="2025-05-15T17:30:18 IST" name="TS15" finished-at="2025-05-15T17:30:24 IST" duration-ms="6474" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TS15 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.DashboardTest@63475ace]" started-at="2025-05-15T15:35:09 IST" name="teardown" finished-at="2025-05-15T15:35:09 IST" duration-ms="250" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.DashboardTest@63475ace]" started-at="2025-05-15T17:30:24 IST" name="teardown" finished-at="2025-05-15T17:30:24 IST" duration-ms="277" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

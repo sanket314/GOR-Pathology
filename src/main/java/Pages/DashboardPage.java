@@ -22,25 +22,25 @@ public class DashboardPage extends BasePage {
        try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		 ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight);");
 		 try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-
 	}
 	
-	public void selectfromdropdown(String testname) throws InterruptedException {
+	public void selectfromdropdown(String testname) {
          click("dropdown");
-         Thread.sleep(2000);
-         String xpath = String.format("//div[contains(@class,'MuiBox-root') and normalize-space(text())='%s']", testname);
-         WebElement dropdownItem = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
-         dropdownItem.click();
+         try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+         driver.findElement(By.xpath(loc.getProperty("dropdown"))).sendKeys(testname);
+         driver.findElement(By.xpath(loc.getProperty("firstDropdownele"))).click();      
 	}
 
 	public void selectdiscount(String percentage)  {

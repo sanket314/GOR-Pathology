@@ -28,7 +28,7 @@ public class DashboardTest extends BaseTest {
 	    }
 	
 	 @Test(priority=1)
-	 public void TS09() throws InterruptedException{
+	 public void TS09() {
 		 
 		  dashpage.scrolltoview();
 		  String testname ="Beans";
@@ -39,7 +39,7 @@ public class DashboardTest extends BaseTest {
 	     
 	 }
 	 @Test(priority=2)
-	 public void TS10() throws InterruptedException{
+	 public void TS10() {
 		 dashpage.selectdiscount("5%");
          String selectedDiscountXpath = "//div[normalize-space()='5%']";
          WebElement selectedDiscount = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(selectedDiscountXpath)));
@@ -47,7 +47,7 @@ public class DashboardTest extends BaseTest {
 	 }
 	 
 	 @Test(priority=3)
-	 public void TS11() throws InterruptedException{
+	 public void TS11() {
 		 
         Double sum= dashpage.calculateNetSum();
 		Double actualTotal = dashpage.applyDiscount(sum, "5");
@@ -56,7 +56,7 @@ public class DashboardTest extends BaseTest {
    	 } 
 	 
 	 @Test(priority=4)
-	 public void TS13() throws InterruptedException{
+	 public void TS13() {
 	    driver.get(prop.getProperty("dashurl"));
 
         dashpage.scrolltoview();
