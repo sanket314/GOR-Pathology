@@ -10,6 +10,8 @@
           <include name="teardown"/>
           <include name="propLoad"/>
           <include name="TS15"/>
+          <include name="TS14"/>
+          <include name="TS11"/>
           <include name="TS13"/>
           <include name="TS09"/>
         </methods>

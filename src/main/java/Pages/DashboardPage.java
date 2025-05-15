@@ -39,8 +39,8 @@ public class DashboardPage extends BasePage {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-         driver.findElement(By.xpath(loc.getProperty("dropdown"))).sendKeys(testname);
-         driver.findElement(By.xpath(loc.getProperty("firstDropdownele"))).click();      
+         type("dropdown",testname);
+         click("firstDropdownele");
 	}
 
 	public void selectdiscount(String percentage)  {
