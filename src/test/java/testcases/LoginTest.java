@@ -1,5 +1,6 @@
 package testcases;
 
+import org.testng.annotations.Test;
 import java.time.Duration;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -19,13 +20,20 @@ public class LoginTest extends BaseTest {
             loginpage=new LoginPage(driver,loc);
 	    }
 	
-	@Test(priority=1)
-	public void TC01() throws InterruptedException  {
-		loginpage.enterEmail("test@kennect.io");
-		loginpage.enterPassword("Qwerty@1234");
-		Thread.sleep(3000);
+	@Test(dataProvider = "loginData", priority = 1)
+	public void TC01(String email,String password)  {
+		loginpage.enterEmail(email);
+		loginpage.enterPassword(password);
 		loginpage.clickLogin();
 		wait.until(ExpectedConditions.urlContains("dashboard"));
 		Assert.assertTrue(driver.getCurrentUrl().equals(prop.getProperty("dashurl")));
 	}
+	
+	@DataProvider
+    public Object[][] loginData() {
+        return new Object[][] {
+            {"test@kennect.io", "Qwerty@1234"} };
+	
+	 }
+	
 }

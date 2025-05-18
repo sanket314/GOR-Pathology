@@ -1,13 +1,12 @@
 package testcases;
 
+import org.testng.annotations.*;
+import org.testng.Assert;
 import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
 import Pages.LoginPage;
 import Pages.TodoPage;
 import base.BaseTest;
@@ -15,13 +14,13 @@ import base.BaseTest;
 public class TodoTest extends BaseTest {
 	
 	LoginPage loginpage;
-	TodoPage Todo;
+	TodoPage TodoP;
 	
 	   @BeforeClass
 	    public void initPage() {
 		   wait = new WebDriverWait(driver, Duration.ofSeconds(10)); 
           loginpage=new LoginPage(driver,loc);
-          Todo=new TodoPage(driver,loc);
+          TodoP=new TodoPage(driver,loc);
           loginpage.enterEmail("test@kennect.io");
           loginpage.enterPassword("Qwerty@1234");
           loginpage.clickLogin(); 
@@ -29,20 +28,22 @@ public class TodoTest extends BaseTest {
 	    }
 	 
 	
-	@Test(priority=1)
-	public void TS05() {
-		Todo.clickAdd();
-		Todo.enterTodo("");
-		Todo.clicksave();
+	@Test(dataProvider = "todoData", priority = 1)
+	public void TS05(String Todo) {
+		if (!Todo.trim().isEmpty()) return;
+		TodoP.clickAdd();
+		TodoP.enterTodo(Todo);
+		TodoP.clicksave();
 		WebElement alert = driver.findElement(By.xpath(loc.getProperty("SuccesTodoAlert")));
 	    Assert.assertFalse(alert.isDisplayed());
 	    System.out.println("Not able to create empty character task");		
 	}
 	
-	@Test(priority=2)
-	public void TS06() {
-		Todo.enterTodo("NewOne");
-		Todo.clicksave();
+	@Test(dataProvider = "todoData", priority = 2)
+	public void TS06(String Todo) {
+		if (Todo.trim().isEmpty()) return;
+		TodoP.enterTodo(Todo);
+		TodoP.clicksave();
 		WebElement alert = driver.findElement(By.xpath(loc.getProperty("SuccesTodoAlert")));
 	    Assert.assertTrue(alert.isDisplayed());
 	}
@@ -55,4 +56,12 @@ public class TodoTest extends BaseTest {
 	     System.out.println("User still logged in");
 	 }
 
+	
+	@DataProvider
+	public Object[][] todoData() {
+	    return new Object[][] {
+	        {""}, 
+	        {"New Item"}, };
+	}
+	
 }
