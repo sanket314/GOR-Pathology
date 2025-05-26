@@ -14,7 +14,6 @@ import Pages.AddpatientPage;
 import Pages.LoginPage;
 import base.BaseTest;
 
-
 public class AddPatientTest extends BaseTest {
 	
 	LoginPage loginpage;

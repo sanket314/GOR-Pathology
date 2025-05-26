@@ -38,7 +38,6 @@ public class AddpatientPage extends BasePage{
 		click("AddTestsbtn");
 	}
 	
-	
 	public void addPatient(String height,String weight,String age ,String systolic, String diastolic) {
 		type("Height",height);
 		type("Weight",weight);
@@ -55,6 +54,5 @@ public class AddpatientPage extends BasePage{
 		else {
 			click("female");
 		}
-	}
-	
+	}	
 }

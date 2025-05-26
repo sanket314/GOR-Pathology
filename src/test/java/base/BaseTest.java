@@ -18,7 +18,7 @@ public class BaseTest {
 	public Properties loc = new Properties();
 	public Properties prop = new Properties();
 		
-
+   @BeforeSuite
 	private void loadProperties() {
 		try {
 			FileInputStream configFis = new FileInputStream("src/test/resources/configfiles/config.properties");
